@@ -1,7 +1,7 @@
 ﻿# ElectroFlask-Forms 
  ### Required 
-  -Python & pip
-  -NodeJS
+  - Python & pip
+  - NodeJS
   ### Installation
  - Clone branch into local directory: git clone https://github.com/cisnejo/ElectroFlask-Forms.git
  - cd into /ElectroFlask-Forms

@@ -1,15 +1,23 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
+const {PythonShell}  = require ('python-shell');
+
+
+let options = {
+    mode: 'text',
+    pythonPath: './venv/Scripts/python.exe',
+    pythonOptions: ['-u'], // get print results in real-time
+
+  };
 
 function createWindow() {
     /* Spawn a child process for development */
-    var python = require('child_process').spawn('py', ['./backend/app.py']);
-    python.stdout.on('data', function (data) {
-        console.log("data: ", data.toString('utf8'));
-    });
-    python.stderr.on('data', (data) => {
-        console.log(`stderr: ${data}`); // when error
-    });
+    PythonShell.run('./app.py', options, function (err, results) {
+        if (err) throw err;
+        // results is an array consisting of messages collected during execution
+        console.log('results: %j', results);
+      });
+
     /* End spawn */
     
     const win = new BrowserWindow({

@@ -13,3 +13,4 @@
  - Install requirements
  - With venv activated, run : "py -m pip -r requirements" in the terminal
  - To deactivate venv, run: "deactivate" in the terminal
+ - Start the application with "npm start"

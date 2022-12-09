@@ -1,4 +1,6 @@
 ﻿# ElectroFlask-Forms 
+ ## Purpose
+  ElectroFlask-Forms is meant to serve as a way to get the best of both worlds, using a local Flask server to process Google Forms data utilizing data analysis libraries as well as providing a front end experience that can use all the tools available to web developers.
  ### Required 
   - Python & pip
   - NodeJS
@@ -11,6 +13,6 @@
  - Activate the virtual environment
  - For windows, in the project root : "./venv/Scripts/activate" in the terminal
  - Install requirements
- - With venv activated, run : "py -m pip -r requirements" in the terminal
+ - With venv activated, run : "py -m pip install -r requirements" in the terminal
  - To deactivate venv, run: "deactivate" in the terminal
  - Start the application with "npm start"

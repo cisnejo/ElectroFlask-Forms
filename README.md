@@ -1,4 +1,6 @@
 ﻿# ElectroFlask-Forms 
+ ## Purpose
+  ElectroFlask-Forms is meant to serve as a way to get the best of both worlds, using a local Flask server to process Google Forms data utilizing data analysis libraries as well as providing a front end experience that can use all the tools available to web developers.
  ### Required 
   - Python & pip
   - NodeJS

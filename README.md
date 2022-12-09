@@ -16,3 +16,7 @@
  - With venv activated, run : "py -m pip install -r requirements" in the terminal
  - To deactivate venv, run: "deactivate" in the terminal
  - Start the application with "npm start"
+ ## Additional steps
+  - Consult https://developers.google.com/forms/api/quickstart/python for steps
+  -  In the OAuth Consent Screen, add yourself to the "Test Users" so that the app can authenticate
+  

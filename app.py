@@ -3,6 +3,8 @@ import json
 from flask import Flask
 from quickstart import *
 
+import os
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
 app = Flask(__name__)
 
@@ -17,8 +19,8 @@ def hello():
 
 @app.route("/test")
 def test():
-    testing()
-    return json.dumps('tested')
+    name = testing()
+    return json.dumps({"name": name})
 
 
 if __name__ == "__main__":

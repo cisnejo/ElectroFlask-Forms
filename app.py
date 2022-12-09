@@ -1,6 +1,8 @@
 import sys
 import json
 from flask import Flask
+from quickstart import *
+
 
 app = Flask(__name__)
 
@@ -11,6 +13,12 @@ def hello():
         "test": "works"
     }
     return json.dumps(value)
+
+
+@app.route("/test")
+def test():
+    testing()
+    return json.dumps('tested')
 
 
 if __name__ == "__main__":

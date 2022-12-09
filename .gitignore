@@ -5,3 +5,4 @@
 /venv
 .env
 credentials.json
+client_secrets.json

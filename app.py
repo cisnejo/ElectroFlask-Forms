@@ -19,8 +19,8 @@ def hello():
 
 @app.route("/test")
 def test():
-    name = testing()
-    return json.dumps({"name": name})
+    data = testing()
+    return json.dumps({"data": data})
 
 
 if __name__ == "__main__":

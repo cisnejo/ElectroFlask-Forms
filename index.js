@@ -1,3 +1,6 @@
+const highcharts = require('highcharts')
+console.log(highcharts)
+
 const button = document.getElementById("click")
 button.addEventListener('click', GetJSON)
 
@@ -17,3 +20,4 @@ const AppendResponseText = (responses) => {
     p.innerText = JSON.stringify(responses.answers)
     text.appendChild(p)
 }
+

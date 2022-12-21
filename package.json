@@ -18,9 +18,12 @@
   },
   "homepage": "https://github.com/cisnejo/ElectroFlask-Forms#readme",
   "devDependencies": {
-    "electron": "^22.0.0"
+    "electron": "^22.0.0",
+    "esmify": "^2.1.1"
   },
   "dependencies": {
+    "browser-resolve": "^2.0.0",
+    "highcharts": "^10.3.2",
     "python-shell": "^3.0.1"
   }
 }
